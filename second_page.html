@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page - The Spacers Guild Travel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Discover More with The Spacers Guild</h1>
+        <img src="assets/space2.jpg" alt="Spacecraft traveling through the cosmos" class="herobanner-image">
+    </div>
+</header>
+
+<div class="container" id="main-content">
+
+    <section>
+        <h1>Exploring the Outer Rim</h1>
+        <p>
+            Venture beyond the known boundaries of the galaxy and explore the enigmatic outer rim with The Spacers Guild. Here, amidst the cosmic wilderness, untold wonders await discovery. From uncharted planets to ancient ruins, the outer rim offers limitless opportunities for exploration and adventure.</p>
+        <img src="assets/outer_rim.jpg" alt="View of a distant galaxy from the outer rim" class="content-image">
+    </section>
+
+    <section>
+        <h2>Mysterious Phenomena</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hidden Treasures</h2>
+        <div class="card">
+            <h3>Lost Temples of Zorath</h3>
+            <p>Discover the ancient temples of Zorath hidden amidst the dense jungles of an uncharted planet. Rumored to hold the secrets of a long-forgotten civilization, these mysterious ruins beckon intrepid explorers to unlock their enigmatic past.</p>
+        </div>
+        <div class="card">
+            <h3>Crystal Caverns of Tethys</h3>
+            <p>
+                Journey into the depths of Tethys' crystal caverns, where shimmering formations of otherworldly beauty await. These subterranean wonders hold not only exquisite treasures but also clues to the planet's geological history and cosmic origins.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Chart Your Course</h2>
+        <p>Ready to embark on your next cosmic adventure? Contact The Spacers Guild today to begin your journey into the unknown.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; <span id="currentYear"></span> The Spacers Guild. All rights reserved.</p>
+</footer>
+
+<script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+</script>
+
+</body>
+</html>

@@ -3,64 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Galactic Adventures</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>The Spacers Guild</title>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Add any additional styles specific to this page */
-        /* Example: .page-specific-style {} */
+        .skip-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #000;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 9999;
+        }
+
+        .skip-link:hover,
+        .skip-link:focus {
+            top: 0;
+        }
     </style>
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="container">
-        <div class="logo">Galactic Adventures</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-        </ul>
-    </div>
-</nav>
+<a href="#main-content" class="skip-link">Get Started</a>
 
 <header class="hero">
-    <div class="container">
-        <h1>Welcome to Galactic Adventures</h1>
-        <p>Embark on a journey through the cosmos and discover the wonders of distant planets.</p>
+    <div class="hero-content">
+        <h1>The Spacers Guild</h1>
+        <img src="assets/space.jpg" alt="Deep blue space with miilions of stars" class="herobanner-image">
     </div>
 </header>
 
-<main class="container">
+<div class="container" id="main-content">
+
     <section>
-        <h2>What We Offer</h2>
+        <h1>What to Expect</h1>
+        <p>
+            Embark on an extraordinary journey through the cosmos with The Spacers Guild. Traverse distant galaxies, encounter alien civilizations, and witness the wonders of deep space. Whether you seek adventure among the stars or tranquility in the vastness of space, The Spacers Guild offers unparalleled voyages beyond imagination. Begin your odyssey today and let the cosmos enchant you with its infinite possibilities.</p>
+        <img src="assets/nebula.jpg" alt="Colorful nebula in deep space" class="content-image">
+    </section>
+
+    <section>
+        <h2>Experience Space Flight</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Gf0Wlo6hJMg" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>Popular Destinations</h2>
+        <div class="card">
+            <h3>Alpha Centauri</h3>
+            <p>Alpha Centauri, a star system teeming with celestial wonders, beckons adventurers and explorers alike. Discover exotic planets, ancient relics, and breathtaking landscapes amidst the cosmic dance of stars. Explore the mysteries of this stellar oasis and let your imagination soar among the galaxies.</p>
+        </div>
+        <div class="card">
+            <h3>Nebulae of Orion</h3>
+            <p>
+                The Nebulae of Orion, swirling clouds of interstellar gas and dust, offer a mesmerizing spectacle for travelers. Journey through these cosmic clouds, where new stars are born and ancient secrets are unveiled. Immerse yourself in the beauty of creation and marvel at the wonders of the universe.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Important Information</h2>
         <div class="accordion">
             <div class="accordion-item">
-                <h3 class="accordion-title" tabindex="0" role="button"><i class="material-icons">keyboard_arrow_down</i> Space Tours</h3>
+                <h3 class="accordion-title" tabindex="0" role="button"><i class="material-icons">expand_more</i> Spacecraft Safety</h3>
                 <div class="accordion-content">
-                    <p>Experience the thrill of space travel with our guided tours to distant galaxies and celestial wonders.</p>
+                    <p>
+                        Traveling through space requires careful preparation and adherence to safety protocols. Spacecraft operated by The Spacers Guild undergo rigorous maintenance and inspection to ensure passenger safety during interstellar voyages. From emergency procedures to radiation shielding, every aspect of spacecraft design prioritizes the well-being of travelers. Embark on your cosmic journey with confidence, knowing that your safety is our highest priority.</p>
                 </div>
             </div>
             <div class="accordion-item">
-                <h3 class="accordion-title" tabindex="0" role="button"><i class="material-icons">keyboard_arrow_down</i> Alien Encounters</h3>
+                <h3 class="accordion-title" tabindex="0" role="button"><i class="material-icons">expand_more</i> Zero-Gravity Experience</h3>
                 <div class="accordion-content">
-                    <p>Encounter fascinating alien species and learn about their cultures and civilizations on our interstellar expeditions.</p>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h3 class="accordion-title" tabindex="0" role="button"><i class="material-icons">keyboard_arrow_down</i> Space Station Visits</h3>
-                <div class="accordion-content">
-                    <p>Visit orbiting space stations and experience life beyond Earth's atmosphere firsthand.</p>
+                    <p>
+                        Prepare for the unique sensation of zero-gravity travel as you venture beyond Earth's atmosphere. The Spacers Guild provides specialized training and equipment to ensure a comfortable and exhilarating experience in space. From floating effortlessly to marveling at the beauty of distant galaxies, zero-gravity offers a perspective unlike any other. Embrace the freedom of weightlessness and let your spirit soar among the stars.</p>
                 </div>
             </div>
         </div>
     </section>
-</main>
 
-<footer class="footer">
-    <div class="container">
-        <p>&copy; <span id="currentYear"></span> Galactic Adventures. All rights reserved.</p>
-    </div>
+    <section>
+        <h2>Explore More</h2>
+        <p>For further adventures, visit our <a href="second_page.html">second page</a>.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; <span id="currentYear"></span> The Spacers Guild. All rights reserved.</p>
 </footer>
 
 <script>
