@@ -19,7 +19,7 @@ header {
     color: #cccccc;
     padding: 50px 20px;
     text-align: center;
-    border-bottom: 12px solid #334455; /* Silver highlight */
+    border-bottom: 12px solid #334455;
 }
 
 /* Title styles */
@@ -38,7 +38,7 @@ section {
 
 /* Card styles */
 .card {
-    background-color: #2a2a2a; /* Dark gray */
+    background-color: #2a2a2a;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -54,7 +54,7 @@ iframe {
 
 /* Accordion styles */
 .accordion {
-    background-color: #2a2a2a; /* Dark gray */
+    background-color: #2a2a2a;
     margin-bottom: 20px;
     border-radius: 8px;
 }
@@ -68,7 +68,7 @@ iframe {
 }
 
 .accordion-title {
-    background-color: #445577; /* Blue highlight */
+    background-color: #445577;
     padding: 15px;
     cursor: pointer;
     border-radius: 8px;
@@ -90,19 +90,19 @@ footer {
 
 /* Links styles */
 a {
-    color: #6699cc; /* Blue highlight */
+    color: #6699cc;
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold; 
 }
 
 a:hover {
-    color: #99ccff; /* Light blue hover */
+    color: #99ccff;
 }
 
 /* Heading styles */
 h1, h2, h3 {
-    color: #6699cc; /* Blue highlight */
+    color: #6699cc;
     font-weight: bold; 
 }
 
