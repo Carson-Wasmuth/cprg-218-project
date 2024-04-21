@@ -3,46 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mushroom Kingdom Travel</title>
+    <title>Mushroom Kingdom Travel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <div class="hero-banner">
-            <h1>Welcome to Mushroom Kingdom</h1>
-            <p>Your ultimate destination for adventures!</p>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Mushroom Kingdom Travel Guide</h1>
+        <p>Welcome to the magical Mushroom Kingdom, where adventure awaits!</p>
+    </div>
+</header>
+
+<div class="container" id="main-content">
+
+    <section>
+        <h2>About Mushroom Kingdom</h2>
+        <p>Explore the enchanting world of the Mushroom Kingdom, home to Mario, Luigi, Princess Peach, and many other beloved characters. From the lush green hills of Yoshi's Island to the fiery depths of Bowser's Castle, there's something for every traveler to discover.</p>
+        <img src="assets/yoshis_island.jpg" alt="Yoshi's Island" class="content-image">
+    </section>
+
+    <section>
+        <h2>Popular Destinations</h2>
+        <div class="card">
+            <h3>Toad Town</h3>
+            <p>Visit Toad Town, the bustling capital of the Mushroom Kingdom. Explore its colorful streets, meet friendly Toads, and maybe even catch a glimpse of Princess Peach's castle.</p>
         </div>
-    </header>
-
-    <main>
-        <section>
-            <h2>Main Attractions</h2>
-            <p>Explore the wonders of Mushroom Kingdom!</p>
-            <div class="main-content">
-                <!-- Embedded images or other media here -->
-            </div>
-        </section>
-        <section>
-            <h2>Accommodations</h2>
-            <p>Find cozy places to stay during your visit.</p>
-            <div class="accordion">
-                <!-- Accordion content here -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Mushroom Kingdom Travel</p>
+        <div class="card">
+            <h3>Mount Beanpole</h3>
+            <p>Climb Mount Beanpole for breathtaking views of the Mushroom Kingdom. Don't forget to bring your Power-Ups for an extra boost!</p>
         </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
+    <section>
+        <h2>Important Information</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <h3 class="accordion-title" tabindex="0" role="button"><span class="accordion-icon">+</span> Climate</h3>
+                <div class="accordion-content">
+                    <p>The Mushroom Kingdom enjoys mild and pleasant weather year-round. However, travelers should be prepared for unexpected encounters with Koopa Troopas, Goombas, and other creatures.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-title" tabindex="0" role="button"><span class="accordion-icon">+</span> Transportation</h3>
+                <div class="accordion-content">
+                    <p>Transportation in the Mushroom Kingdom is as varied as its landscapes. From warp pipes to flying carpets, you'll find plenty of ways to get around. Just watch out for banana peels!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer style="background-color: #4CAF50; height: 100px; empty-cells: show; align-items: center; text-align: center;">
+    <p>&copy; <span id="currentYear"></span> Mushroom Kingdom Travel Agency. All rights reserved.</p>
+</footer>
+
+<script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        const title = item.querySelector('.accordion-title');
+        const content = item.querySelector('.accordion-content');
+
+        title.addEventListener('click', () => {
+            item.classList.toggle('active');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                title.querySelector('.accordion-icon').textContent = '+';
+            } else {
+                content.style.display = 'block';
+                title.querySelector('.accordion-icon').textContent = '-';
+            }
+        });
+
+        title.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                item.classList.toggle('active');
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    title.querySelector('.accordion-icon').textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    title.querySelector('.accordion-icon').textContent = '-';
+                }
+            }
+        });
+        
+        title.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+            }
+        });
+    });
+
+    // Add your dynamic or interactive content here
+    function sanityCheck() {
+        console.log('!Sanity check: all good!');
+    }
+    sanityCheck();
+</script>
+
 </body>
 </html>

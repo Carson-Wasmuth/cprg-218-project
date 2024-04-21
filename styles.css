@@ -1,48 +1,19 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Additional styles specific to Mushroom Kingdom */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
 }
-
-header {
-    background-color: #f3f3f3;
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.hero-banner {
+.hero {
+    background-image: url('assets/mushroom_kingdom.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
-    padding: 50px 0;
 }
-
-.hero-banner h1 {
-    font-size: 2.5em;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
-
-.main-content {
-    /* Styles for the main content area */
-}
-
-.accordion {
-    /* Styles for the accordion menu */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+/* Add more specific styles for Mushroom Kingdom here */
