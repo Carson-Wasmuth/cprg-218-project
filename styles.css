@@ -1,19 +1,148 @@
-/* Additional styles specific to Mushroom Kingdom */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Press Start 2P', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-.hero {
-    background-image: url('assets/mushroom_kingdom.jpg');
-    background-size: cover;
-    height: 100vh;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
 }
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background-image: url('assets/hero-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-/* Add more specific styles for Mushroom Kingdom here */
+
+/* Main Content */
+section {
+    margin-bottom: 40px;
+}
+
+.destination {
+    display: flex;
+    align-items: center;
+}
+
+.destination img {
+    flex: 1;
+    border-radius: 8px;
+}
+
+.destination-info {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.destination h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .destination {
+        flex-direction: column;
+    }
+
+    .destination img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .destination-info {
+        padding: 0;
+    }
+
+    .destination h3 {
+        font-size: 1.2rem;
+    }
+}

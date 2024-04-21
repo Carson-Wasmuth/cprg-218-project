@@ -3,72 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mushroom Kingdom Destinations</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Destinations - Galactic Adventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional styles specific to Mushroom Kingdom */
-        body {
-            font-family: 'Press Start 2P', sans-serif;
-        }
-        /* Add more specific styles for Mushroom Kingdom here */
+        /* Add any additional styles specific to this page */
+        /* Example: .page-specific-style {} */
     </style>
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
-    </ul>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">Galactic Adventures</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+        </ul>
+    </div>
 </nav>
 
 <header class="hero">
-    <div class="hero-content">
-        <h1>Mushroom Kingdom Destinations</h1>
-        <p>Explore the wonders of the Mushroom Kingdom!</p>
+    <div class="container">
+        <h1>Explore Our Destinations</h1>
+        <p>Discover the wonders of the universe with our curated selection of exotic planets.</p>
     </div>
 </header>
 
-<div class="container" id="main-content">
-
+<main class="container">
     <section>
-        <h2>Featured Destinations</h2>
-        <div class="card">
-            <h3>Princess Peach's Castle</h3>
-            <p>Visit the majestic Princess Peach's Castle, the iconic symbol of the Mushroom Kingdom. Explore its grand halls, lush gardens, and maybe even enjoy a royal banquet!</p>
-        </div>
-        <div class="card">
-            <h3>Mushroom Plains</h3>
-            <p>Embark on a journey through the scenic Mushroom Plains, home to friendly Toads and vibrant flora. Don't forget to collect power-ups along the way!</p>
-        </div>
-        <div class="card">
-            <h3>Star Road</h3>
-            <p>Discover the magical Star Road, a network of celestial pathways that connect different parts of the Mushroom Kingdom. Traveling through Star Road is an adventure like no other!</p>
+        <div class="destination">
+            <img src="assets/planet1.jpg" alt="Exotic Planet">
+            <div class="destination-info">
+                <h2>Planet X-42</h2>
+                <p>Explore the breathtaking landscapes and unique wildlife of Planet X-42. Book your adventure today!</p>
+            </div>
         </div>
     </section>
 
     <section>
-        <h2>More Destinations</h2>
-        <div class="card">
-            <h3>Koopa Troopa Beach</h3>
-            <p>Relax on the sandy shores of Koopa Troopa Beach, where the sun is always shining and the waves are perfect for surfing.</p>
-        </div>
-        <div class="card">
-            <h3>Boo's Haunted Mansion</h3>
-            <p>Brave the spooky halls of Boo's Haunted Mansion, if you dare. Ghostly surprises await around every corner!</p>
+        <div class="destination">
+            <img src="assets/planet2.jpg" alt="Mysterious Planet">
+            <div class="destination-info">
+                <h2>Planet Y-17</h2>
+                <p>Unravel the mysteries of Planet Y-17 as you delve into its ancient ruins and encounter enigmatic creatures.</p>
+            </div>
         </div>
     </section>
+</main>
 
-</div>
-
-<footer style="background-color: #4CAF50; height: 100px; empty-cells: show; align-items: center; text-align: center;">
-    <p>&copy; <span id="currentYear"></span> Mushroom Kingdom Travel Agency. All rights reserved.</p>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> Galactic Adventures. All rights reserved.</p>
+    </div>
 </footer>
 
 <script>
     const currentYear = new Date().getFullYear();
     document.getElementById('currentYear').textContent = currentYear;
+
+    // Add any dynamic or interactive content here
+    // Example: document.getElementById('button').addEventListener('click', function() {});
 </script>
 
 </body>
