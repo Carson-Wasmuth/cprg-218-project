@@ -149,7 +149,8 @@ p {
         font-size: 32px;
     }
 
-    .herobanner-image {
+    .herobanner-image,
+    .apod-image {
         width: 100%;
         height: auto;
         margin-top: 10px;
@@ -185,7 +186,8 @@ p {
         font-size: 32px;
     }
 
-    .hero-image {
+    .hero-image,
+    .apod-image {
         width: 45%;
         height: auto;
     }
@@ -196,7 +198,8 @@ p {
         border-radius: 8px;
     }
 
-    .content-image {
+    .content-image,
+    .apod-image {
         width: 100%;
         height: auto;
         max-width: 100%;
@@ -226,7 +229,8 @@ p {
         font-size: 48px;
     }
 
-    .hero-image {
+    .hero-image,
+    .apod-image {
         width: 50%;
         height: auto;
     }
