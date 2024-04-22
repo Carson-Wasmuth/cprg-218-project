@@ -110,6 +110,15 @@
         </div>
     </section>
 
+    <section>
+        <h2>See What's Out There</h2>
+        <button id="fetchAPODBtn">Fetch Astronomy Picture of the Day</button>
+        <div id="apodContainer">
+        </div>
+    </section>
+
+</div>
+
 <footer>
     <p>&copy; <span id="currentYear"></span> The Spacers Guild. All rights reserved.</p>
 </footer>
@@ -151,6 +160,23 @@
             }
         });
     });
+document.getElementById('fetchAPODBtn').addEventListener('click', () => {
+    fetch('https://api.nasa.gov/planetary/apod?api_key=kfIfKo1fZD98qdR8caUJpaTIMB5euo91yTbJ1Nxq')
+        .then(response => response.json())
+        .then(data => {
+            const apodContainer = document.getElementById('apodContainer');
+            apodContainer.innerHTML = `
+                <img src="${data.url}" alt="${data.title}" class="apod-image">
+                <h3>${data.title}</h3>
+                <p>${data.explanation}</p>
+            `;
+        })
+        .catch(error => {
+            console.error('Error fetching Astronomy Picture of the Day:', error);
+            const apodContainer = document.getElementById('apodContainer');
+            apodContainer.innerHTML = 'Failed to fetch Astronomy Picture of the Day. Please try again later.';
+        });
+});
 </script>
 
 </body>
